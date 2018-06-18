@@ -3,10 +3,11 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SplashPage } from '../pages/splash/splash';
+import { NFC, Ndef } from '@ionic-native/nfc';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,9 @@ import { SplashPage } from '../pages/splash/splash';
   providers: [
     StatusBar,
     SplashScreen,
+    BarcodeScanner,
+    NFC,
+    Ndef,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

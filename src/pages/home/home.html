@@ -1,17 +1,17 @@
- <!-- <ion-header>
+ <ion-header>
   <ion-navbar color="primary">
     <ion-title>
       <ion-icon name="list-box"></ion-icon>
        Scanned Prodcuts
     </ion-title>
   </ion-navbar>
-</ion-header>  -->
+</ion-header> 
 
 <ion-content padding class="container">
 
   <!--home page-->
   
-  <!-- <div class="wrapper">
+   <div class="wrapper">
       <div class="icon-circle-large">
           <ion-icon name="cart"></ion-icon>
           
@@ -22,16 +22,19 @@
   <ion-fab center middle>
       <button ion-fab color="fabColor"><ion-icon name="add"></ion-icon></button>
       <ion-fab-list side="left">
-        <button ion-fab><ion-icon name="md-qr-scanner"></ion-icon></button>
+        <button ion-fab (click)="scan()"><ion-icon name="md-qr-scanner"></ion-icon></button>
+
+      </ion-fab-list>
+      <ion-fab-list side="right">
+        <button ion-fab (click)="nfcScan()"><ion-icon name="wifi"></ion-icon></button>
 
       </ion-fab-list>
     </ion-fab>
-   -->
   
+  <p>{{scannedValue}}</p>
 
   <!--name of the application -->
-  <!--spalash screen html-->
-  <p>abcd</p>
+ 
 
   
 </ion-content>

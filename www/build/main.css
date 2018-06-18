@@ -27980,117 +27980,44 @@ ion-navbar.toolbar {
 }
 
 page-home {
-  /** home page
-  .wrapper{
-    position: relative;
-    
-    top:10%;
-    text-align: center;
-  }
-  .icon-circle, .icon-circle-large, .icon-circle-small{
-    
-    display: inline-block;
-    margin: -1px;
-    /*padding: 16px;*/
-  /*width: 45px; /* 60*/
-  /**splash screen css*/
+  /** home page**/
 }
 
 page-home body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-page-home .scroll-content {
-  background: url("../assets/imgs/blkchain.png") no-repeat center center fixed;
-  background-size: cover;
-}
-
-page-home .load-bar {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10px;
-  background-color: #fdba2c;
-}
-
-page-home .bar {
-  content: "";
-  display: inline;
-  position: absolute;
-  width: 0;
-  height: 100%;
-  left: 50%;
-  text-align: center;
-}
-
-page-home .bar:nth-child(1) {
-  background-color: #da4733;
-  -webkit-animation: loading 3s linear infinite;
-  animation: loading 3s linear infinite;
-}
-
-page-home .bar:nth-child(2) {
-  background-color: #3b78e7;
-  -webkit-animation: loading 3s linear 1s infinite;
-  animation: loading 3s linear 1s infinite;
-}
-
-page-home .bar:nth-child(3) {
-  background-color: #fdba2c;
-  -webkit-animation: loading 3s linear 2s infinite;
-  animation: loading 3s linear 2s infinite;
-}
-
-@-webkit-keyframes loading {
-  from {
-    left: 50%;
-    width: 0;
-    z-index: 100;
-  }
-  33.3333% {
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
-  to {
-    left: 0;
-    width: 100%;
-  }
-}
-
-@keyframes loading {
-  from {
-    left: 50%;
-    width: 0;
-    z-index: 100;
-  }
-  33.3333% {
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
-  to {
-    left: 0;
-    width: 100%;
-  }
-}
-
-page-home .apptitle {
+page-home .wrapper {
   position: relative;
+  top: 10%;
   text-align: center;
-  top: 52%;
 }
 
-page-home .title {
-  position: absolute;
-  width: 100%;
+page-home .icon-circle, page-home .icon-circle-large, page-home .icon-circle-small {
+  display: inline-block;
+  margin: -1px;
+  /*padding: 16px;*/
+  /*width: 45px; /* 60*/
+  height: 45px;
+  font-size: 40px;
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+  background: #e7e8e9;
+  /*#ececec;ebebeb*/
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  text-align: center;
+  /*vertical-align: middle;*/
 }
 
-page-splash scroll-content {
+page-home .icon-circle-large {
+  width: 100px;
+  height: 100px;
+  font-size: 64px;
+  /* 64, originally 60 */
+  padding: 10px 9px 9px 9px;
+}
+
+page-splash .scroll-content {
   background: url("../assets/imgs/blkchain.png") no-repeat center center fixed;
   background-size: cover;
 }
@@ -28129,6 +28056,23 @@ page-splash .bar:nth-child(3) {
   background-color: #fdba2c;
   -webkit-animation: loading 3s linear 2s infinite;
   animation: loading 3s linear 2s infinite;
+}
+
+@-webkit-keyframes loading {
+  from {
+    left: 50%;
+    width: 0;
+    z-index: 100;
+  }
+  33.3333% {
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
 }
 
 @keyframes loading {
